@@ -1,67 +1,102 @@
-# Vertebral Neurodiagnostic Associates LLC Website
+Vertebral Neurodiagnostic Associates LLC
 
-Professional website for intraoperative neuromonitoring services.
+Intraoperative Neuromonitoring Services Website
 
-## Quick Start
+This repository contains the source code for the official Vertebral Neurodiagnostic Associates LLC website. The site is a static frontend designed for public information, client contact, and optional payment integration.
 
-1. **Add Your Logo**
-   - Place your logo file in the root directory
-   - Name it `logo.png` (or update the filename in `index.html` line 15)
-   - Supported formats: PNG, JPG, SVG
-   - Recommended size: At least 200px width, transparent background preferred
+Project Overview
 
-2. **Update Contact Information**
-   - Open `index.html`
-   - Update the contact section (around line 270) with:
-     - Your actual phone number
-     - Your actual email address
-     - Your business address
-     - Your business hours
+Static website built with HTML, CSS, and JavaScript
 
-3. **Set Up Stripe Payment (Optional)**
-   - Sign up for a Stripe account at https://stripe.com
-   - Get your publishable key from the Stripe Dashboard
-   - Replace `pk_test_your_publishable_key_here` in `script.js` (line 60) with your actual key
-   - **Note:** For production payments, you'll need to set up a backend server to securely handle payment processing
+Deployed using GitHub Pages
 
-## Files Structure
+Designed for professional medical service presentation
 
-- `index.html` - Main HTML file
-- `styles.css` - All styling
-- `script.js` - JavaScript functionality and Stripe integration
-- `logo.png` - Your company logo (add this file)
+Optional Stripe integration for future payment workflows
 
-## Payment Setup (Full Implementation)
+File Structure
 
-For a complete payment system, you'll need:
+index.html – Main website markup
 
-1. **Backend Server** (Node.js, Python, PHP, etc.)
-   - Create an endpoint: `/api/create-payment-intent`
-   - Use your Stripe secret key to create payment intents
-   - Handle payment confirmation
+styles.css – Global styling and layout
 
-2. **Update script.js**
-   - Uncomment the backend API call code
-   - Update the fetch URL to your server endpoint
+script.js – Frontend logic and optional Stripe hooks
 
-3. **Security**
-   - Never expose your Stripe secret key in client-side code
-   - Always use HTTPS in production
-   - Validate payments on your server
+logo.png – Company logo asset
 
-## Customization
+Setup and Customization
+Branding
 
-- **Colors**: Edit the CSS variables in `styles.css` (lines 7-17)
-- **Content**: Update text in `index.html` to match your services
-- **Services**: Modify the services section to reflect your actual offerings
+Replace logo.png in the root directory with your company logo
 
-## Browser Support
+Supported formats: PNG, JPG, SVG
 
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Responsive design for mobile, tablet, and desktop
+Recommended: transparent background, minimum 200px width
 
-## Notes
+Content Updates
 
-- The contact form currently shows a success message but doesn't send emails. You'll need to set up a backend service (like Formspree, EmailJS, or your own server) for actual email functionality.
-- Payment integration requires backend setup for security and full functionality.
+Edit text content directly in index.html
 
+Update contact details, service descriptions, and business information as needed
+
+Styling
+
+Modify color scheme and layout using CSS variables at the top of styles.css
+
+Payments (Optional)
+
+This site includes frontend-only placeholders for Stripe integration.
+
+Important:
+
+No live payments are processed from this repository alone
+
+Secure payment processing requires a backend server
+
+Stripe secret keys must never be exposed in client-side code
+
+Recommended approach:
+
+Use Stripe Checkout or Payment Intents via a secure backend
+
+Connect this frontend to your server through API endpoints
+
+Contact Form
+
+The contact form is UI-only by default
+
+To enable submissions, integrate a backend or third-party service such as:
+
+Formspree
+
+EmailJS
+
+Custom server endpoint
+
+Deployment
+
+Hosted using GitHub Pages
+
+Public repository required on free GitHub plans
+
+Static assets only
+
+Security Notes
+
+Do not commit API keys, secrets, or credentials
+
+Use environment variables for all sensitive values
+
+Enforce HTTPS for any production backend services
+
+Browser Support
+
+Chrome
+
+Firefox
+
+Safari
+
+Edge
+
+Responsive across desktop, tablet, and mobile.
