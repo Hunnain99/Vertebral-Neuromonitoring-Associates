@@ -57,15 +57,6 @@ Use Stripe Checkout or Payment Intents via a secure backend
 
 Connect this frontend to your server through API endpoints
 
-Contact Form
-
-The contact form is UI-only by default
-
-To enable submissions, integrate a backend or third-party service such as:
-
-Formspree
-
-EmailJS
 
 Custom server endpoint
 
