@@ -27,10 +27,6 @@ logo.png – Company logo asset
 Setup and Customization
 Branding
 
-Replace logo.png in the root directory with your company logo
-
-Supported formats: PNG, JPG, SVG
-
 Recommended: transparent background, minimum 200px width
 
 Content Updates
